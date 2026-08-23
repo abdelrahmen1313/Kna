@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+   background: #0f1117;
+  color: #e8eaed;
+  line-height: 1.5;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.rainbow-text {
+font-weight: bold;
+text-align: center;
+background: linear-gradient(to right,  blue, indigo, violet);
+-webkit-background-clip: text;
+color: transparent;
+animation: rainbow-animation 7s infinite linear;
+background-size: 400% 100%;
+}
+
+@keyframes rainbow-animation {
+0% {
+background-position: 0% 50%;
+}
+100% {
+background-position: 100% 50%;
+}
+}
